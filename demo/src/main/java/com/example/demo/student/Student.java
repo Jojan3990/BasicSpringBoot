@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.Period;
 
-@Entity //this is for hibernate
+@Entity //this is for hibernate(recreate it as a table in database)
 @Table //this is for table
 public class Student {
     @Id
@@ -73,7 +73,7 @@ public class Student {
     }
 
     public Integer getAge() {
-        return Period.between(this.dob,LocalDate.now()).getYears();
+        return Period.between(this.dob,LocalDate.now()).getYears();//Period Class obtains a quantity or amount of time in terms of years, months and days.
     }
 
     public void setAge(Integer age) {

@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
-@Repository //as this interface is respnsible for data access
+@Repository //as this interface is responsible for data access
 public interface StudentRepository extends JpaRepository<Student,Long> { //here student is type we want to work upon and Long is the id type which is long that we have defined
 //    select * from student where email =?
 

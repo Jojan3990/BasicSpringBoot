@@ -11,7 +11,7 @@ import java.util.List;
 @Configuration
 public class StudentConfig {
 
-    @Bean //this runs
+    @Bean //this runs(bean is simply a java object created when framework starts)
     CommandLineRunner commandLineRunner(StudentRepository repository){ //injecting
         return args -> {
             Student jojan = new Student(
